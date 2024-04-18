@@ -1,0 +1,210 @@
+body {
+  color: #434455;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Хот-барр сайта */
+.home-link,
+.home-color {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.home-color {
+  color: #2e2f42;
+}
+
+/* Кнопки навігаціЇ */
+.navigation,
+.nav-link {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+/* Адресс */
+.address {
+  font-style: normal;
+}
+
+.address-list,
+.address-info {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.address-info:hover,
+.address-info:focus {
+  color: #404bbf;
+}
+
+/* Перша секція - головна сторінка */
+.section-one {
+  background: #2e2f42;
+}
+
+/* Заголовок сайта */
+.tagline-main {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Кнопка заказа */
+.button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #4d5ae5;
+}
+
+.button:hover,
+.button:focus {
+  background: #404bbf;
+}
+
+/* Друга секція - сильні сторони */
+
+.section-two {
+}
+
+.title-stange-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.title-stange-article {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Третя секція - наша команда */
+.section-three {
+  background-color: #f4f4fd;
+}
+
+.tagline-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.list-personal {
+  background-color: #ffffff;
+}
+
+.personal-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.position {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* Четверта секція - наше портфоліо */
+.section-four {
+}
+
+.tagline-portfolio {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.list-personal {
+  background-color: #ffffff;
+}
+
+.service {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.list-portfolio {
+  background-color: #ffffff;
+}
+
+.tipe-service {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Нижння частина сайта */
+.footer {
+  background: #2e2f42;
+}
+
+.home-page-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.logo-footer-color {
+  color: #f4f4fd;
+}
+
+.title-footer {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}

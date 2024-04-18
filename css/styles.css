@@ -4,12 +4,40 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
 ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.navigation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
 }
 
 /* Хот-барр сайта */
-.home-link,
+.header-links,
 .home-color {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -77,8 +105,7 @@ ul {
 }
 
 /* Кнопка заказа */
-.button {
-  cursor: pointer;
+button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -87,8 +114,8 @@ ul {
   background: #4d5ae5;
 }
 
-.button:hover,
-.button:focus {
+button:hover,
+button:focus {
   background: #404bbf;
 }
 

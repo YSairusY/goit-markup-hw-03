@@ -29,6 +29,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 button {
@@ -48,6 +49,10 @@ main {
 ul {
   display: flex;
   flex-direction: column;
+}
+
+.page-container {
+  min-height: 100vh;
 }
 
 .main-container {
@@ -154,6 +159,10 @@ button:focus {
 .section-two {
 }
 
+.section-two ul {
+  flex-direction: row;
+}
+
 .title-stange-list {
   font-weight: 500;
   font-size: 20px;
@@ -171,6 +180,10 @@ button:focus {
 /* Третя секція - наша команда */
 .section-three {
   background-color: #f4f4fd;
+}
+
+.section-three ul {
+  flex-direction: row;
 }
 
 .tagline-team {

@@ -153,6 +153,9 @@ main {
   gap: 32px;
 }
 
+.box-img-personal {
+}
+
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -354,7 +357,7 @@ button:focus {
 /* Нижння частина сайта */
 .footer .container {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 100px;
   display: inline-block;
 }
 
@@ -378,5 +381,4 @@ button:focus {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   padding-top: 16px;
-  width: 264px;
 }

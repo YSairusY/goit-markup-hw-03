@@ -99,14 +99,6 @@ main {
   margin: 0 auto 48px auto;
 }
 
-.button {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
-}
-
 .section-two-item:not(:last-child) {
   flex-basis: calc((100 - 72px) / 4);
 }
@@ -124,12 +116,19 @@ main {
   overflow: hidden;
 }
 
+.section-one .container {
+  flex-direction: column;
+  display: flex;
+}
+
+.section-two .container {
+  flex-direction: column;
+}
+
 .strange-list {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: column;
-  flex-direction: row;
   gap: 8px;
 }
 
@@ -137,22 +136,26 @@ main {
   margin-bottom: 8px;
 }
 
+.section-three .container {
+  flex-direction: column;
+}
+
 .tagline-team {
   align-items: flex-start;
   justify-content: center;
+  padding-bottom: 72px;
 }
 
 .list-personal-compani {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 32px;
 }
 
 .list-portfolio {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   gap: 24px;
   flex-direction: row;
   row-gap: 48px;
@@ -213,7 +216,7 @@ main {
 .section-one {
   background: #2e2f42;
   height: 600px;
-  padding: 188px 0;
+  padding: 188px 0 292px;
 }
 
 /* Заголовок сайта */
@@ -239,6 +242,13 @@ button {
   padding: 16px 32px;
   width: 169px;
   height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
 }
 
 button:hover,
@@ -281,10 +291,6 @@ button:focus {
   color: #2e2f42;
 }
 
-.list-personal {
-  background-color: #ffffff;
-}
-
 .personal-name {
   font-weight: 500;
   font-size: 20px;
@@ -302,7 +308,9 @@ button:focus {
 }
 
 /* Четверта секція - наше портфоліо */
-.section-four {
+.section-four .container {
+  flex-direction: column;
+  padding-bottom: 72px;
 }
 
 .tagline-portfolio {
@@ -317,6 +325,12 @@ button:focus {
 
 .list-personal {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  height: 380px;
+  width: calc((100 - 72px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .service {
@@ -338,11 +352,13 @@ button:focus {
 }
 
 /* Нижння частина сайта */
-.footer {
+.footer .container {
   background: #2e2f42;
+  padding: 100px 0;
+  display: inline-block;
 }
 
-.home-page-footer {
+.logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -350,8 +366,6 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .logo-footer-color {

@@ -377,4 +377,6 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  padding-top: 16px;
+  width: 264px;
 }

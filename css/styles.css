@@ -36,6 +36,10 @@ button {
   cursor: pointer;
 }
 
+section {
+  padding: 120px 0;
+}
+
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -46,29 +50,112 @@ main {
   flex-grow: 1;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
-}
-
 .page-container {
   min-height: 100vh;
 }
 
-.main-container {
+.header-box {
+  border: 1px solid #e7e9fc;
+  font-size: 16px;
+}
+
+.page-container .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0px;
 }
 
 .navigation {
   display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding: 24px 0;
+}
+
+.address-box {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-links {
+  margin-right: 76px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.tagline-main {
+  max-width: 496px;
+  margin: 0 auto 48px auto;
+}
+
+.button {
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 40px;
+  gap: 10px;
+}
+
+.section-two-item:not(:last-child) {
+  flex-basis: calc((100 - 72px) / 4);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.strange-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.title-stange {
+  margin-bottom: 8px;
+}
+
+.tagline-team {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.list-personal-compani {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 24px;
+  flex-direction: row;
+  row-gap: 48px;
 }
 
 /* Хот-барр сайта */
@@ -89,12 +176,11 @@ ul {
 }
 
 /* Кнопки навігаціЇ */
-.navigation,
 .nav-link {
+  padding: 24px 0;
   text-decoration: none;
   list-style-type: none;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -106,14 +192,13 @@ ul {
 }
 
 /* Адресс */
-.address {
+.address-box {
   font-style: normal;
 }
 
 .address-list,
 .address-info {
   text-decoration: none;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -127,6 +212,8 @@ ul {
 /* Перша секція - головна сторінка */
 .section-one {
   background: #2e2f42;
+  height: 600px;
+  padding: 188px 0;
 }
 
 /* Заголовок сайта */
@@ -147,6 +234,11 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
+
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
 }
 
 button:hover,
@@ -156,14 +248,7 @@ button:focus {
 
 /* Друга секція - сильні сторони */
 
-.section-two {
-}
-
-.section-two ul {
-  flex-direction: row;
-}
-
-.title-stange-list {
+.title-stange {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -259,13 +344,14 @@ button:focus {
 
 .home-page-footer {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-decoration: none;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-footer-color {

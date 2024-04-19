@@ -24,21 +24,21 @@
   <body>
     <div class="page-container">
       <!-- Верхння частина сайта -->
-      <header>
+      <header class="header-box">
         <div class="container">
           <nav class="navigation">
             <!-- Navigation -->
             <a class="header-links" href="./index.html"
               >Web<span class="home-color">Studio</span></a
             >
-            <ul class="navigation">
+            <ul class="navigation-list">
               <li><a class="nav-link" href="./index.html">Studio</a></li>
               <li><a class="nav-link" href="">Portfolio</a></li>
               <li><a class="nav-link" href="">Contacts</a></li>
             </ul>
           </nav>
           <!-- Contact info -->
-          <address class="address">
+          <address class="address-box">
             <ul class="address-list">
               <li>
                 <a class="address-info" href="mailto:info@devstudio.com"
@@ -69,34 +69,34 @@
         <!-- Сильнi сторони -->
         <section class="section-two">
           <div class="container">
-            <h2>Our strengths</h2>
-            <ul>
-              <li>
-                <h3 class="title-stange-list">Strategy</h3>
+            <h2 class="visually-hidden">Our strengths</h2>
+            <ul class="strange-list">
+              <li class="section-two-item">
+                <h3 class="title-stange">Strategy</h3>
                 <p class="title-stange-article">
                   Our goal is to identify the business problem to walk away with
                   the perfect and creative solution.
                 </p>
               </li>
 
-              <li>
-                <h3 class="title-stange-list">Punctuality</h3>
+              <li class="section-two-item">
+                <h3 class="title-stange">Punctuality</h3>
                 <p class="title-stange-article">
                   Bring the key message to the brand's audience for the best
                   price within the shortest possible time.
                 </p>
               </li>
 
-              <li>
-                <h3 class="title-stange-list">Diligence</h3>
+              <li class="section-two-item">
+                <h3 class="title-stange">Diligence</h3>
                 <p class="title-stange-article">
                   Research and confirm brands that present the strongest digital
                   growth opportunities and minimize risk.
                 </p>
               </li>
 
-              <li>
-                <h3 class="title-stange-list">Technologies</h3>
+              <li class="section-two-item">
+                <h3 class="title-stange">Technologies</h3>
                 <p class="title-stange-article">
                   Design practice focused on digital experiences. We bring forth
                   a deep passion for problem-solving.
@@ -111,7 +111,7 @@
           <div class="container">
             <h2 class="tagline-team">Our Team</h2>
 
-            <ul>
+            <ul class="list-personal-compani">
               <!-- Mark Guerrero -->
               <li class="list-personal">
                 <img
@@ -120,8 +120,10 @@
                   width="264"
                   height="260"
                 />
-                <h3 class="personal-name">Mark Guerrero</h3>
-                <p class="position">Product Designer</p>
+                <div>
+                  <h3 class="personal-name">Mark Guerrero</h3>
+                  <p class="position">Product Designer</p>
+                </div>
               </li>
 
               <!-- Tom Ford -->
@@ -132,8 +134,10 @@
                   width="264"
                   height="260"
                 />
-                <h3 class="personal-name">Tom Ford</h3>
-                <p class="position">Frontend Developer</p>
+                <div>
+                  <h3 class="personal-name">Tom Ford</h3>
+                  <p class="position">Frontend Developer</p>
+                </div>
               </li>
 
               <!-- Camila Garcia -->
@@ -144,8 +148,10 @@
                   width="264"
                   height="260"
                 />
-                <h3 class="personal-name">Camila Garcia</h3>
-                <p class="position">Marketing</p>
+                <div>
+                  <h3 class="personal-name">Camila Garcia</h3>
+                  <p class="position">Marketing</p>
+                </div>
               </li>
 
               <!-- Daniel Wilson -->
@@ -156,8 +162,10 @@
                   width="264"
                   height="260"
                 />
-                <h3 class="personal-name">Daniel Wilson</h3>
-                <p class="position">UI Designer</p>
+                <div>
+                  <h3 class="personal-name">Daniel Wilson</h3>
+                  <p class="position">UI Designer</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -169,8 +177,10 @@
             <ul class="list-portfolio">
               <li>
                 <img src="./images/app.jpg" alt="Banking App" width="360" />
-                <h3 class="service">Banking App</h3>
-                <p class="tipe-service">App</p>
+                <div>
+                  <h3 class="service">Banking App</h3>
+                  <p class="tipe-service">App</p>
+                </div>
               </li>
               <li>
                 <img
@@ -178,8 +188,10 @@
                   alt="Cashless Payment"
                   width="360"
                 />
-                <h3 class="service">Cashless Payment</h3>
-                <p class="tipe-service">Marketing</p>
+                <div>
+                  <h3 class="service">Cashless Payment</h3>
+                  <p class="tipe-service">Marketing</p>
+                </div>
               </li>
               <li>
                 <img
@@ -187,13 +199,17 @@
                   alt="Meditation App"
                   width="360"
                 />
-                <h3 class="service">Meditation App</h3>
-                <p class="tipe-service">App</p>
+                <div>
+                  <h3 class="service">Meditation App</h3>
+                  <p class="tipe-service">App</p>
+                </div>
               </li>
               <li>
                 <img src="./images/car.jpg" alt="Taxi Service" width="360" />
-                <h3 class="service">Taxi Service</h3>
-                <p class="tipe-service">Marketing</p>
+                <div>
+                  <h3 class="service">Taxi Service</h3>
+                  <p class="tipe-service">Marketing</p>
+                </div>
               </li>
               <li>
                 <img
@@ -201,13 +217,17 @@
                   alt="Screen Illustrations"
                   width="360"
                 />
-                <h3 class="service">Screen Illustrations</h3>
-                <p class="tipe-service">Design</p>
+                <div>
+                  <h3 class="service">Screen Illustrations</h3>
+                  <p class="tipe-service">Design</p>
+                </div>
               </li>
               <li>
                 <img src="./images/girl.jpg" alt="Online Courses" width="360" />
-                <h3 class="service">Online Courses</h3>
-                <p class="tipe-service">Marketing</p>
+                <div>
+                  <h3 class="service">Online Courses</h3>
+                  <p class="tipe-service">Marketing</p>
+                </div>
               </li>
             </ul>
           </div>

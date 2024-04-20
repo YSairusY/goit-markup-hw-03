@@ -57,9 +57,10 @@ main {
 .header-box {
   border: 1px solid #e7e9fc;
   font-size: 16px;
+  display: flex;
 }
 
-.page-container .container {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -119,9 +120,10 @@ main {
 .section-one .container {
   flex-direction: column;
   display: flex;
+  align-items: center;
 }
 
-.section-two .container {
+.section-two {
   flex-direction: column;
 }
 
@@ -148,18 +150,11 @@ main {
 
 .list-personal-compani {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
   gap: 24px;
 }
 
 .box-img-personal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   padding: 32px 0;
-  gap: 8px;
 }
 
 .main-list-portfolio {
@@ -171,18 +166,10 @@ main {
 }
 
 .portfolio-section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
-
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
-  height: 120px;
 }
 
 /* Хот-барр сайта */
@@ -250,7 +237,7 @@ main {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 48px;
   color: #ffffff;
 }
 
@@ -297,10 +284,6 @@ button:focus {
   background-color: #f4f4fd;
 }
 
-.section-three ul {
-  flex-direction: row;
-}
-
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -329,10 +312,6 @@ button:focus {
 }
 
 /* Четверта секція - наше портфоліо */
-.section-four .container {
-  flex-direction: column;
-  padding-bottom: 72px;
-}
 
 .section-title {
   font-weight: 700;
@@ -346,16 +325,8 @@ button:focus {
 
 .list-personal {
   background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  height: 380px;
   width: calc((100% - 3 * 24px) / 4);
-
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -395,11 +366,6 @@ button:focus {
   color: #4d5ae5;
   margin-bottom: 16px;
   display: inline-block;
-
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0px;
 }
 
 .logo-footer-color {

@@ -85,8 +85,15 @@ main {
   margin-left: auto;
 }
 
+.address-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .header-links {
   margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-list {

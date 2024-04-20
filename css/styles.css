@@ -121,6 +121,10 @@ main {
   display: flex;
 }
 
+.our-team {
+  padding: 32px 0;
+}
+
 .section-two .container {
   flex-direction: column;
 }
@@ -143,7 +147,7 @@ main {
 .section-title {
   align-items: flex-start;
   justify-content: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .list-personal-compani {
@@ -161,7 +165,7 @@ main {
   gap: 8px;
 }
 
-.list-portfolio {
+.main-list-portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -239,7 +243,7 @@ main {
 .section-one {
   background: #2e2f42;
   height: 600px;
-  padding: 188px 0 292px;
+  padding: 188px 0;
 }
 
 /* Заголовок сайта */
@@ -249,6 +253,7 @@ main {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
   color: #ffffff;
 }
 
@@ -347,7 +352,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
@@ -366,7 +371,7 @@ button:focus {
   color: #2e2f42;
 }
 
-.list-portfolio {
+.main-list-portfolio {
   background-color: #ffffff;
 }
 
@@ -390,6 +395,7 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
   display: inline-block;
 
   align-items: center;
@@ -408,5 +414,4 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-top: 16px;
 }

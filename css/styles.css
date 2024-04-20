@@ -99,8 +99,8 @@ main {
   margin: 0 auto 48px auto;
 }
 
-.section-two-item:not(:last-child) {
-  flex-basis: calc((100 - 72px) / 4);
+.list-strange {
+  width: calc((100% - 72px) / 4);
 }
 
 .visually-hidden {
@@ -132,7 +132,7 @@ main {
   gap: 8px;
 }
 
-.title-stange {
+.title-strange {
   margin-bottom: 8px;
 }
 
@@ -140,7 +140,7 @@ main {
   flex-direction: column;
 }
 
-.tagline-team {
+.section-title {
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 72px;
@@ -148,12 +148,17 @@ main {
 
 .list-personal-compani {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: flex-start;
   gap: 32px;
 }
 
 .box-img-personal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .list-portfolio {
@@ -162,6 +167,21 @@ main {
   gap: 24px;
   flex-direction: row;
   row-gap: 48px;
+}
+
+.portfolio-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
 
 /* Хот-барр сайта */
@@ -234,6 +254,8 @@ main {
 
 /* Кнопка заказа */
 button {
+  min-width: 169px;
+  height: 56px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -241,17 +263,10 @@ button {
   color: #ffffff;
   background: #4d5ae5;
 
+  border: none;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
-  height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
 }
 
 button:hover,
@@ -261,7 +276,7 @@ button:focus {
 
 /* Друга секція - сильні сторони */
 
-.title-stange {
+.title-strange {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -269,7 +284,7 @@ button:focus {
   color: #2e2f42;
 }
 
-.title-stange-article {
+.title-strange-article {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -284,7 +299,7 @@ button:focus {
   flex-direction: row;
 }
 
-.tagline-team {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -316,7 +331,7 @@ button:focus {
   padding-bottom: 72px;
 }
 
-.tagline-portfolio {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -328,10 +343,17 @@ button:focus {
 
 .list-personal {
   background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   height: 380px;
-  width: calc((100 - 72px) / 4);
+  width: calc((100% - 72px) / 4);
+
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -355,10 +377,9 @@ button:focus {
 }
 
 /* Нижння частина сайта */
-.footer .container {
+.footer {
   background: #2e2f42;
-  padding: 100px;
-  display: inline-block;
+  padding: 100px 0;
 }
 
 .logo-footer {
@@ -369,6 +390,12 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
 }
 
 .logo-footer-color {

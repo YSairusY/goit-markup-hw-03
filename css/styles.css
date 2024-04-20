@@ -133,7 +133,7 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 8px;
+  gap: 24px;
 }
 
 .title-strange {
@@ -154,7 +154,7 @@ main {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 32px;
+  gap: 24px;
 }
 
 .box-img-personal {
@@ -162,6 +162,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 32px 0l;
   gap: 8px;
 }
 
@@ -321,6 +322,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .position {
@@ -352,18 +354,18 @@ button:focus {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 24px;
 
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   height: 380px;
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .service {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
